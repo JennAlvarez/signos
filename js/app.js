@@ -20,6 +20,7 @@ btnAries.addEventListener("click", mostrarModalAries);
 btnTauro.addEventListener("click", mostrarModalTauro);
 btnGeminis.addEventListener("click", mostrarModalGeminis);
 btnCancer.addEventListener("click", mostrarModalCancer);
+btnLeo.addEventListener("click", mostrarModalLeo);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -44,5 +45,11 @@ function mostrarModalCancer() {
   modalTitulo.innerHTML = "CANCER";
   modalDescripcion.innerHTML =
     "Son personas complicadas de clasificar, si se atiende a su carácter. Los hay tímidos y aburridos , pero también brillantes y famosos . De hecho, algunos presentan una alta capacidad literaria y artística, gracias a su capacidad imaginativa. Les encanta ser extrovertidos, pero también tienen tendencia a retraerse. El hogar es lo más importante para ellos, por la seguridad y el calor que encuentran en él.";
+}
+function mostrarModalLeo() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "LEO";
+  modalDescripcion.innerHTML =
+    "Es el signo más dominante del Zodiaco. Es creativo y extrovertido. Tienen ambición, fuerza, valentía y seguridad en sus capacidades. No temen a los obstáculos y suelen ser buenos, idealistas e inteligentes. Para los Leo , el lujo y el poder están entre sus gustos. Asimismo, son capaces de utilizar trucos y mentiras para desacreditar a sus enemigos. A veces, también pueden caer en la superioridad y la prepotencia.";
 }
 
