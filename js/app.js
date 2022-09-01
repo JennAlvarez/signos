@@ -18,6 +18,7 @@ let modalDescripcion = document.getElementById("modalDescripcion");
 //eventos
 btnAries.addEventListener("click", mostrarModalAries);
 btnTauro.addEventListener("click", mostrarModalTauro);
+btnGeminis.addEventListener("click", mostrarModalGeminis);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -30,5 +31,11 @@ function mostrarModalTauro() {
   modalTitulo.innerHTML = "TAURO";
   modalDescripcion.innerHTML =
     "Es una persona que tiene una gran fuerza de voluntad, es práctico y decidido en la toma de decisiones. Suelen ser personas estables y conservadoras y no dudan en seguir a un líder si les despierta confianza. Son gente de paz, por lo que lo normal es que respeten las leyes y normas. El hecho de que tengan entusiasmo por la rutina y la continuidad hace que sean algo tozudos y de ideas fijas. No suelen hundirse en las dificultades y siempre salen adelante. Amantes de la buena comida, bebida y distintos placeres de la vida deben tener cuidado con los excesos.";
+}
+function mostrarModalGeminis() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "GEMINIS";
+  modalDescripcion.innerHTML =
+    "Carácter doble, complejo y contradictorio es lo que mejor define a un Géminis . Al contrario que los Aries, los Géminis empiezan con entusiasmo nuevas aventuras, pero tienden a aburrirse rápido por la falta de constancia. Son personas cariñosas, amables y generosas , aunque tienen algo de mentirosos si quieren obtener algo. Eso sí, sin perder el encanto. Suelen ser personas que se desaniman con facilidad ante las dificultades, por lo que necesitan escuchar halagos y recibir atención. Inteligencia y capacidad para aprender la tienen, aunque suelen aburrirse en el proceso de aprendizaje.";
 }
 
