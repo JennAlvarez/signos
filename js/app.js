@@ -26,6 +26,8 @@ btnLibra.addEventListener("click", mostrarModalLibra);
 btnEscorpio.addEventListener("click", mostrarModalEscorpio);
 btnSagitario.addEventListener("click", mostrarModalSagitario);
 btnCapricornio.addEventListener("click", mostrarModalCapricornio);
+btnAcuario.addEventListener("click", mostrarModalAcuario);
+btnPiscis.addEventListener("click", mostrarModalPiscis);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -86,5 +88,17 @@ function mostrarModalCapricornio() {
   modalTitulo.innerHTML = "CAPRICORNIO";
   modalDescripcion.innerHTML =
     "Estabilidad, seguridad y tranquilidad es lo que mejor define a un Capricornio . Son personas justas y exigentes con los demás, porque también lo son con ellos mismos. Suelen perder el control de sus emociones, por lo que es fácil que sean pesimistas y melancólicos, pero siempre tratan de buscar ayuda. Por eso es recomendable que mantengan la estabilidad emocional a través de la meditación, respiración o actividades que les ayuden a relajarse.";
+}
+function mostrarModalAcuario() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "ACUARIO";
+  modalDescripcion.innerHTML =
+    "Tienen una personalidad fuerte y atractiva, pero hay dos tipos : los que son tímidos, sensibles y pacientes; y los que son exuberantes, vivos y frívolos. Eso sí, ambos son honestos y no dudarán en cambiar su opinión si estaban equivocados. Es el signo más tolerante de los doce, pero tampoco les gusta pertenecer a la multitud. Muchas veces sienten la necesidad de retirarse para meditar. No hacen amigos con facilidad, a pesar de la personalidad abierta que tienen.";
+}
+function mostrarModalPiscis() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "PISCIS";
+  modalDescripcion.innerHTML =
+    "Son tranquilos, amables y pacientes. Los Piscis son sensibles a los sentimientos de los demás y responden con simpatía al tacto y al sufrimiento. Son queridos por el resto de los signos, debido al carácter afable, cariñoso y amable. Les preocupan más los problemas de los demás que los suyos propios. Eso sí, les cuesta mucho luchar por el poder establecido. Son creativos y artísticos.";
 }
 
