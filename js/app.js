@@ -23,6 +23,8 @@ btnCancer.addEventListener("click", mostrarModalCancer);
 btnLeo.addEventListener("click", mostrarModalLeo);
 btnVirgo.addEventListener("click", mostrarModalVirgo);
 btnLibra.addEventListener("click", mostrarModalLibra);
+btnEscorpio.addEventListener("click", mostrarModalEscorpio);
+btnSagitario.addEventListener("click", mostrarModalSagitario);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -65,5 +67,17 @@ function mostrarModalLibra() {
   modalTitulo.innerHTML = "LIBRA";
   modalDescripcion.innerHTML =
     "El signo del Zodiaco más civilizado . Tienen encanto, elegancia, buen gusto y son amables y pacíficos, por lo que no es raro que ante conflictos sean imparciales y muestren su rechazo a ellos. Valoran el esfuerzo de los demás y les gusta trabajar en equipo. El lado negativo de Libra es que de lo curiosos que son a veces se entrometen en la vida de los demás . Están en contra de la rutina, y una vez que tengan una opinión de algo no les gusta que se les contradiga.";
+}
+function mostrarModalEscorpio() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "ESCORPIO";
+  modalDescripcion.innerHTML =
+    "Es una persona tranquila que parece alejada de la realidad, aunque nunca dejan de observar todo a su alrededor con el ojo crítico. Tienen mucha fuerza de voluntad y muestran tenacidad , pero también les afecta al estado de ánimo las circunstancias que les rodean. Suelen ser críticos y esto les lleva, a veces, a ser algo resentidos con los demás. Sin embargo son excelentes amigos de aquellos a los que consideran que merecen su respeto.";
+}
+function mostrarModalSagitario() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "SAGITARIO";
+  modalDescripcion.innerHTML =
+    "Es una persona tranquila que parece alejada de la realidad, aunque nunca dejan de observar todo a su alrededor con el ojo crítico. Tienen mucha fuerza de voluntad y muestran tenacidad , pero también les afecta al estado de ánimo las circunstancias que les rodean. Suelen ser críticos y esto les lleva, a veces, a ser algo resentidos con los demás. Sin embargo son excelentes amigos de aquellos a los que consideran que merecen su respeto.";
 }
 
