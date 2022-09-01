@@ -150,13 +150,13 @@
         <h3 class="m-0 display-6 text-center">Encuentra tu signo!</h3>
         <article class="row m-3">
             <aside class="col-12 col-md-6 p-3">
-                <form>
+                <form id="formBuscarSigno">
                     <div class="mb-3">
                         <label for="nacimiento">Fecha de nacimiento</label>
                         <input type="date" class="form-control" placeholder="19/10/1993">
                     </div>
                     <div>
-                        <button type="submit" class="btn botonSignos text-white">Enviar</button>
+                        <button type="button" class="btn botonSignos text-white" id="buscarSigno">Buscar mi Signo</button>
                     </div>
                 </form>
             </aside>
@@ -171,6 +171,9 @@
                           <option value="fuego">Fuego</option>
                           <option value="aire">Aire</option>
                         </select>
+                      </div>
+                      <div>
+                        <button type="button" class="btn botonSignos text-white">Buscar elemento</button>
                       </div>
                 </form>
             </aside>
