@@ -22,6 +22,7 @@ btnGeminis.addEventListener("click", mostrarModalGeminis);
 btnCancer.addEventListener("click", mostrarModalCancer);
 btnLeo.addEventListener("click", mostrarModalLeo);
 btnVirgo.addEventListener("click", mostrarModalVirgo);
+btnLibra.addEventListener("click", mostrarModalLibra);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -58,5 +59,11 @@ function mostrarModalVirgo() {
   modalTitulo.innerHTML = "VIRGO";
   modalDescripcion.innerHTML =
     "Único signo zodiacal representado por una mujer . Los Virgo son observadores, pacientes y les cuesta hacer amigos por su carácter frío que muestran a veces. A pesar de ello tienen encanto y suelen ayudar a los demás cuando se presenta un problema. El método, el estudio y la lógica predominan en ellos, por eso les gusta aprender siempre, así como tener un análisis de la situación. Tanto se paran a pensar que a veces pueden retrasar la conclusión de los proyectos más complicados que llevan a cabo. Son intuitivos y capaces de ver todos los lados de un argumento.";
+}
+function mostrarModalLibra() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "LIBRA";
+  modalDescripcion.innerHTML =
+    "El signo del Zodiaco más civilizado . Tienen encanto, elegancia, buen gusto y son amables y pacíficos, por lo que no es raro que ante conflictos sean imparciales y muestren su rechazo a ellos. Valoran el esfuerzo de los demás y les gusta trabajar en equipo. El lado negativo de Libra es que de lo curiosos que son a veces se entrometen en la vida de los demás . Están en contra de la rutina, y una vez que tengan una opinión de algo no les gusta que se les contradiga.";
 }
 
