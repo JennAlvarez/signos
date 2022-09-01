@@ -25,6 +25,7 @@ btnVirgo.addEventListener("click", mostrarModalVirgo);
 btnLibra.addEventListener("click", mostrarModalLibra);
 btnEscorpio.addEventListener("click", mostrarModalEscorpio);
 btnSagitario.addEventListener("click", mostrarModalSagitario);
+btnCapricornio.addEventListener("click", mostrarModalCapricornio);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -78,6 +79,12 @@ function mostrarModalSagitario() {
   modalSignos.show();
   modalTitulo.innerHTML = "SAGITARIO";
   modalDescripcion.innerHTML =
-    "Es una persona tranquila que parece alejada de la realidad, aunque nunca dejan de observar todo a su alrededor con el ojo crítico. Tienen mucha fuerza de voluntad y muestran tenacidad , pero también les afecta al estado de ánimo las circunstancias que les rodean. Suelen ser críticos y esto les lleva, a veces, a ser algo resentidos con los demás. Sin embargo son excelentes amigos de aquellos a los que consideran que merecen su respeto.";
+    "Es el signo más positivo de todo el Zodiaco . Cuando las cosas se ponen complicadas un Sagitario siempre sacará la mejor versión y se olvidará de la negatividad. Entre sus mejores características están las de ser buenos organizadores y abarcar nuevos proyectos y aprender cosas nuevas. El lado negativo es el genio que pueden mostrar a veces, sobre todo cuando detectan que alguien no va a su ritmo. Muchas veces también son exigentes con los demás , porque cuando un objetivo se les pone enfrente no dudan en sacrificarse.";
+}
+function mostrarModalCapricornio() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "CAPRICORNIO";
+  modalDescripcion.innerHTML =
+    "Estabilidad, seguridad y tranquilidad es lo que mejor define a un Capricornio . Son personas justas y exigentes con los demás, porque también lo son con ellos mismos. Suelen perder el control de sus emociones, por lo que es fácil que sean pesimistas y melancólicos, pero siempre tratan de buscar ayuda. Por eso es recomendable que mantengan la estabilidad emocional a través de la meditación, respiración o actividades que les ayuden a relajarse.";
 }
 
