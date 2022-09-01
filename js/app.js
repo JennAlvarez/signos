@@ -21,6 +21,7 @@ btnTauro.addEventListener("click", mostrarModalTauro);
 btnGeminis.addEventListener("click", mostrarModalGeminis);
 btnCancer.addEventListener("click", mostrarModalCancer);
 btnLeo.addEventListener("click", mostrarModalLeo);
+btnVirgo.addEventListener("click", mostrarModalVirgo);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -51,5 +52,11 @@ function mostrarModalLeo() {
   modalTitulo.innerHTML = "LEO";
   modalDescripcion.innerHTML =
     "Es el signo más dominante del Zodiaco. Es creativo y extrovertido. Tienen ambición, fuerza, valentía y seguridad en sus capacidades. No temen a los obstáculos y suelen ser buenos, idealistas e inteligentes. Para los Leo , el lujo y el poder están entre sus gustos. Asimismo, son capaces de utilizar trucos y mentiras para desacreditar a sus enemigos. A veces, también pueden caer en la superioridad y la prepotencia.";
+}
+function mostrarModalVirgo() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "VIRGO";
+  modalDescripcion.innerHTML =
+    "Único signo zodiacal representado por una mujer . Los Virgo son observadores, pacientes y les cuesta hacer amigos por su carácter frío que muestran a veces. A pesar de ello tienen encanto y suelen ayudar a los demás cuando se presenta un problema. El método, el estudio y la lógica predominan en ellos, por eso les gusta aprender siempre, así como tener un análisis de la situación. Tanto se paran a pensar que a veces pueden retrasar la conclusión de los proyectos más complicados que llevan a cabo. Son intuitivos y capaces de ver todos los lados de un argumento.";
 }
 
