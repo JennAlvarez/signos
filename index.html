@@ -34,7 +34,7 @@
               class="card-img-top"
               alt="signos"
             />
-            <button class="btn botonSignos text-white">ARIES</button>
+            <button class="btn botonSignos text-white" type="button" id="btnAries">ARIES</button>
 
           </div>
         </aside>
@@ -141,11 +141,11 @@
         <aside class="col-12 col-md-3 col-lg-2 mb-3">
           <div class="card">
             <img src="https://previews.123rf.com/images/sergemaksimov/sergemaksimov1410/sergemaksimov141000011/32723283-muestra-astrol%C3%B3gica-del-zodiaco-piscis-parte-de-un-conjunto-de-signos-del-hor%C3%B3scopo-ilustraci%C3%B3n-del-.jpg" class="card-img-top" alt="signos" />
-            <button class="btn botonSignos text-white">PISIS</button>
+            <button class="btn botonSignos text-white">PISCIS</button>
           </div>
         </aside>
     </section>
-    <!-- modal de cada signo -->
+
     <section class="buscarsigno py-3">
         <h3 class="m-0 display-6 text-center">Encuentra tu signo!</h3>
         <article class="row m-3">
@@ -178,6 +178,24 @@
         
     </section>
  </main>
+     <!-- modal de cada signo -->
+     <div class="modal fade" id="modalSignos" tabindex="-1" aria-labelledby="modalSignosLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header botonSignos ">
+            <h5 class="modal-title " id="modalTitulo">Signo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body " id="modalDescripcion">
+           descripcion signo
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary botonSignos" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
  <footer></footer>
  <!-- JavaScript Bundle with Popper -->
  <script
