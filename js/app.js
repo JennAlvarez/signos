@@ -19,6 +19,7 @@ let modalDescripcion = document.getElementById("modalDescripcion");
 btnAries.addEventListener("click", mostrarModalAries);
 btnTauro.addEventListener("click", mostrarModalTauro);
 btnGeminis.addEventListener("click", mostrarModalGeminis);
+btnCancer.addEventListener("click", mostrarModalCancer);
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -37,5 +38,11 @@ function mostrarModalGeminis() {
   modalTitulo.innerHTML = "GEMINIS";
   modalDescripcion.innerHTML =
     "Carácter doble, complejo y contradictorio es lo que mejor define a un Géminis . Al contrario que los Aries, los Géminis empiezan con entusiasmo nuevas aventuras, pero tienden a aburrirse rápido por la falta de constancia. Son personas cariñosas, amables y generosas , aunque tienen algo de mentirosos si quieren obtener algo. Eso sí, sin perder el encanto. Suelen ser personas que se desaniman con facilidad ante las dificultades, por lo que necesitan escuchar halagos y recibir atención. Inteligencia y capacidad para aprender la tienen, aunque suelen aburrirse en el proceso de aprendizaje.";
+}
+function mostrarModalCancer() {
+  modalSignos.show();
+  modalTitulo.innerHTML = "CANCER";
+  modalDescripcion.innerHTML =
+    "Son personas complicadas de clasificar, si se atiende a su carácter. Los hay tímidos y aburridos , pero también brillantes y famosos . De hecho, algunos presentan una alta capacidad literaria y artística, gracias a su capacidad imaginativa. Les encanta ser extrovertidos, pero también tienen tendencia a retraerse. El hogar es lo más importante para ellos, por la seguridad y el calor que encuentran en él.";
 }
 
