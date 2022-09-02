@@ -20,6 +20,9 @@ let formBuscarSigno = document.getElementById("formBuscarSigno");
 let btnBuscarSigno = document.getElementById("btnBuscarSigno");
 let dia = document.getElementById("dia");
 let mes = document.getElementById("mes");
+let formBuscarElemento = document.getElementById("formBuscarElemento");
+let buscarElemento = document.getElementById("btnBuscarElemento");
+
 
 //eventos
 btnAries.addEventListener("click", mostrarModalAries);
@@ -35,8 +38,9 @@ btnCapricornio.addEventListener("click", mostrarModalCapricornio);
 btnAcuario.addEventListener("click", mostrarModalAcuario);
 btnPiscis.addEventListener("click", mostrarModalPiscis);
 formBuscarSigno.addEventListener("submit", BuscarSigno);
-dia.addEventListener("blur",()=>{cantidadCaracteres(dia)})
-mes.addEventListener("blur",()=>{cantidadCaracteres(mes)})
+dia.addEventListener("blur",()=>{cantidadCaracteres(dia)});
+mes.addEventListener("blur",()=>{cantidadCaracteres(mes)});
+formBuscarElemento.addEventListener("submit", buscarElemento);
 
 
 
@@ -152,3 +156,5 @@ function cantidadCaracteres(input){
         return false;
     }
 }
+
+

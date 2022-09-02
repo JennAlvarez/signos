@@ -259,19 +259,19 @@
             </form>
           </aside>
           <aside class="col-12 col-md-6 p-3">
-            <form>
+            <form id="formBuscarElemento">
               <div class="mb-3">
                 <label for="elementos">Seleccione un elemento</label>
                 <select class="form-select" aria-label="Default select example">
                   <option value="">Selecione una opcion</option>
-                  <option value="agua">Agua</option>
-                  <option value="tierra">Tierra</option>
-                  <option value="fuego">Fuego</option>
-                  <option value="aire">Aire</option>
+                  <option value="agua" id="agua" class="form-control">Agua</option>
+                  <option value="tierra" id="tierra" class="form-control">Tierra</option>
+                  <option value="fuego" id="fuego" class="form-control">Fuego</option>
+                  <option value="aire" id="aire" class="form-control">Aire</option>
                 </select>
               </div>
               <div>
-                <button type="button" class="btn botonSignos text-white">
+                <button type="submit" class="btn botonSignos text-white" id="btnBuscarElemento">
                   Buscar elemento
                 </button>
               </div>
@@ -313,6 +313,7 @@
       </div>
     </div>
 
+
     <footer></footer>
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -320,6 +321,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/app.js" ></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
