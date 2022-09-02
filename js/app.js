@@ -1,3 +1,5 @@
+// import cantidadCaracteres from "./helpers.js";
+
 //variables
 const modalSignos = new bootstrap.Modal(document.getElementById("modalSignos"));
 const btnAries = document.getElementById("btnAries");
@@ -14,6 +16,10 @@ const btnAcuario = document.getElementById("btnAcuario");
 const btnPiscis = document.getElementById("btnPiscis");
 let modalTitulo = document.getElementById("modalTitulo");
 let modalDescripcion = document.getElementById("modalDescripcion");
+let formBuscarSigno = document.getElementById("formBuscarSigno");
+let btnBuscarSigno = document.getElementById("btnBuscarSigno");
+let dia = document.getElementById("dia");
+let mes = document.getElementById("mes");
 
 //eventos
 btnAries.addEventListener("click", mostrarModalAries);
@@ -28,6 +34,11 @@ btnSagitario.addEventListener("click", mostrarModalSagitario);
 btnCapricornio.addEventListener("click", mostrarModalCapricornio);
 btnAcuario.addEventListener("click", mostrarModalAcuario);
 btnPiscis.addEventListener("click", mostrarModalPiscis);
+formBuscarSigno.addEventListener("submit", BuscarSigno);
+dia.addEventListener("blur",()=>{cantidadCaracteres(dia)})
+mes.addEventListener("blur",()=>{cantidadCaracteres(mes)})
+
+
 
 function mostrarModalAries() {
   modalSignos.show();
@@ -102,3 +113,42 @@ function mostrarModalPiscis() {
     "Son tranquilos, amables y pacientes. Los Piscis son sensibles a los sentimientos de los demás y responden con simpatía al tacto y al sufrimiento. Son queridos por el resto de los signos, debido al carácter afable, cariñoso y amable. Les preocupan más los problemas de los demás que los suyos propios. Eso sí, les cuesta mucho luchar por el poder establecido. Son creativos y artísticos.";
 }
 
+function BuscarSigno(e) {
+    e.preventDefault();
+  console.log(dia.value, mes.value);
+  if(dia.value>=21 && mes.value==3 || dia.value<=20 && mes.value ==4){
+    mostrarModalAries();
+  }else if(dia.value>=24 && mes.value==9 || dia.value<=23 && mes.value ==10){
+    mostrarModalLibra();
+  }else if(dia.value>=21 && mes.value==4 || dia.value<=21 && mes.value ==5){
+    mostrarModalTauro();
+  }else if(dia.value>=24 && mes.value==10 || dia.value<=22 && mes.value ==11){
+    mostrarModalEscorpio();
+  }else if(dia.value>=22 && mes.value==5 || dia.value<=21 && mes.value ==6){
+    mostrarModalGeminis();
+  }else if(dia.value>=23 && mes.value==12 || dia.value<=20 && mes.value ==01){
+    mostrarModalCapricornio();
+  }else if(dia.value>=24 && mes.value==7 || dia.value<=23 && mes.value ==8){
+    mostrarModalLeo();
+  }else if(dia.value>=22 && mes.value==6 || dia.value<=23 && mes.value ==7){
+    mostrarModalCancer();
+  }else if(dia.value>=21 && mes.value==1 || dia.value<=19 && mes.value ==2){
+    mostrarModalAcuario();
+  }else if(dia.value>=24 && mes.value==8 || dia.value<=23 && mes.value ==9){
+    mostrarModalVirgo();
+  }else if(dia.value>=20 && mes.value==2 || dia.value<=20 && mes.value ==3){
+    mostrarModalPiscis();
+}
+}
+
+function cantidadCaracteres(input){
+    if(input.value.trim().length >= 1 && input.value.trim().length <= 2){
+        console.log("dato valido");
+        input.className = "form-control is-valid";
+        return true;
+    }else {
+        console.log("dato invalido");
+        input.className = "form-control is-invalid";
+        return false;
+    }
+}
